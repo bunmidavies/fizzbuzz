@@ -3,11 +3,7 @@ var text = "";
 var main = document.getElementById("main");
 function fizzbuzz(){
     number++;
-    if (number==100){
-        text = "Finished. By Bunmi Davies.";
-        clearInterval(mainfunc);
-        
-    }
+    
     if (number % 15 == 0){
         text = "fizzbuzz";
     }
@@ -19,6 +15,11 @@ function fizzbuzz(){
     }
     else{
         text = number;
+    }
+    if (number==100){
+        text = "Finished. By Bunmi Davies.";
+        clearInterval(mainfunc);
+        
     }
     main.innerHTML = text;
 }
